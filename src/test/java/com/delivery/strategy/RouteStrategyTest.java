@@ -136,9 +136,10 @@ class RouteStrategyTest {
         RoutePlanner planner =
                 new RoutePlanner(new FastestRouteStrategy(eligibility));
 
-        assertThrows(IllegalArgumentException.class,
+        assertThrows(NullPointerException.class,
                 () -> planner.setStrategy(null));
     }
+
 
     @Test
     void strategyThrowsWhenEveryRouteIsUnavailable() {
