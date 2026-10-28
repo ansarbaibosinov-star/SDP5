@@ -1,4 +1,3 @@
-
 package com.delivery.model;
 
 import java.util.List;
